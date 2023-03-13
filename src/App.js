@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import CallBackRefInput from "./components/calbackref/CallBackRefInput";
+import ParentCallBackRef from "./components/calbackref/ParentCallBackRef";
+import ButtonContext from "./components/context/ButtonContext";
+import Sidebar from "./components/context/Sidebar";
+import AddPost from "./components/form/AddPost";
+import Category from "./components/hoc/Category";
+import Posts from "./components/posts/Posts";
+import ParentInputText from "./components/ref/ParentInputText";
+// import RefTextInput from "./components/ref/RefTextInput";
+// import Button from "./components/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: "flex" }}>
+      <div style={{ width: "20%", background: " red", height: "100vh" }}>
+        <ButtonContext.Provider value="this is link">
+          <Sidebar />
+        </ButtonContext.Provider>
+      </div>
+
+      <div style={{ width: "80%" }}>
+        <div>
+          <ParentCallBackRef />
+        </div>
+        <div>
+          <ParentInputText />
+        </div>
+        <div>
+          <Category  name="this is categor"/>
+        </div>
+        <Posts />
+        {/* hi
+      <Button name="send button" /> */}
+        <div>
+          <AddPost />
+        </div>
+      </div>
     </div>
   );
 }
