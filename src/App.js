@@ -1,12 +1,14 @@
 import "./App.css";
 // import CallBackRefInput from "./components/calbackref/CallBackRefInput";
-import ParentCallBackRef from "./components/calbackref/ParentCallBackRef";
+// import ParentCallBackRef from "./components/calbackref/ParentCallBackRef";
 import ButtonContext from "./components/context/ButtonContext";
 import Sidebar from "./components/context/Sidebar";
-import AddPost from "./components/form/AddPost";
-import Category from "./components/hoc/Category";
-import Posts from "./components/posts/Posts";
-import ParentInputText from "./components/ref/ParentInputText";
+import TabelView from "./components/fragment/TabelView";
+// import AddPost from "./components/form/AddPost";
+// import ParentForwardingRefButton from "./components/forwardref/ParentForwardingRefButton";
+// import Category from "./components/hoc/Category";
+// import Posts from "./components/posts/Posts";
+// import ParentInputText from "./components/ref/ParentInputText";
 // import RefTextInput from "./components/ref/RefTextInput";
 // import Button from "./components/Button";
 
@@ -20,6 +22,11 @@ function App() {
       </div>
 
       <div style={{ width: "80%" }}>
+        <TabelView />
+        {/* <div>
+        <ParentForwardingRefButton />
+        </div>
+        
         <div>
           <ParentCallBackRef />
         </div>
@@ -29,12 +36,12 @@ function App() {
         <div>
           <Category  name="this is categor"/>
         </div>
-        <Posts />
+        <Posts /> */}
         {/* hi
       <Button name="send button" /> */}
-        <div>
+        {/* <div>
           <AddPost />
-        </div>
+        </div> */}
       </div>
     </div>
   );
