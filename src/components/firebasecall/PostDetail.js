@@ -35,17 +35,17 @@ class PostDetail extends React.Component {
   render() {
     return (
       <div>
-        <h2>details post</h2>
+        <h2 className="text-3xl p-5 text-red-500 ">details post</h2>
 
         {this.state.post && (
           <div style={{background: 'red', color:'white',padding:'10px',margin:'10px',boxShadow:'0 0 5px green'}}>
             <div style={{ textAlign: "start" }}>Id: {this.state.post.id} </div>
-            <div style={{ textAlign: "start" }}>
+            <div className="text-red" style={{ textAlign: "start" }}>
               Title :{this.state.post.title}{" "}
             </div>
-            <div style={{ textAlign: "start" }}>
+            <p className="text-primary" style={{ textAlign: "start" }}>
               Description : {this.state.post.description}
-            </div>
+            </p>
           </div>
         )}
       </div>
