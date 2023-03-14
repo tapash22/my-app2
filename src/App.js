@@ -1,9 +1,12 @@
 import "./App.css";
+import Posts from "./components/firebasecall/Posts";
+// import UserList from "./components/propstype/UserList";
 // import CallBackRefInput from "./components/calbackref/CallBackRefInput";
 // import ParentCallBackRef from "./components/calbackref/ParentCallBackRef";
-import ButtonContext from "./components/context/ButtonContext";
-import Sidebar from "./components/context/Sidebar";
-import TabelView from "./components/fragment/TabelView";
+// import ButtonContext from "./components/context/ButtonContext";
+// import Sidebar from "./components/context/Sidebar";
+// import MouseTracker from "./components/renderprops/MouseTracker";
+// import TabelView from "./components/fragment/TabelView";
 // import AddPost from "./components/form/AddPost";
 // import ParentForwardingRefButton from "./components/forwardref/ParentForwardingRefButton";
 // import Category from "./components/hoc/Category";
@@ -15,14 +18,18 @@ import TabelView from "./components/fragment/TabelView";
 function App() {
   return (
     <div className="App" style={{ display: "flex" }}>
-      <div style={{ width: "20%", background: " red", height: "100vh" }}>
+
+      <Posts />
+      {/* <UserList /> */}
+      {/* <div style={{ width: "20%", background: " red", height: "100vh" }}>
         <ButtonContext.Provider value="this is link">
           <Sidebar />
         </ButtonContext.Provider>
-      </div>
+      </div> */}
 
-      <div style={{ width: "80%" }}>
-        <TabelView />
+      {/* <div style={{ width: "80%" }}> */}
+        {/* <MouseTracker /> */}
+        {/* <TabelView /> */}
         {/* <div>
         <ParentForwardingRefButton />
         </div>
@@ -42,7 +49,7 @@ function App() {
         {/* <div>
           <AddPost />
         </div> */}
-      </div>
+      {/* </div> */}
     </div>
   );
 }
